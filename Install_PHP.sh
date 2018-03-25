@@ -33,10 +33,11 @@ yum install php70-pecl-apcu -y
 rm -f /usr/local/apache-maven-3.5.2-bin.tar.gz
 
 # Creating PHP file for Project - Relay24
-cat > /var/www/html/index.php << "EOL"
+cat > /var/www/html/index.php << "EOFF"
 <html>
   <body>
     <h1> 
+    <?php
       // Setup a handle for CURL
       $curl_handle=curl_init();
       curl_setopt($curl_handle,CURLOPT_CONNECTTIMEOUT,2);
@@ -56,7 +57,7 @@ cat > /var/www/html/index.php << "EOL"
     <h1>    
   </body>
 </html>
-EOL
+EOFF
 echo ""
 chmod +x /var/www/html/index.php
 
