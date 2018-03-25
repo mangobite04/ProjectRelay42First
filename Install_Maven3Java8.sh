@@ -61,9 +61,9 @@ EOL
 echo ""
 chmod +x /var/www/html/index.php
 
-# HTTPD Services Start
-service httpd start
-
 # Adding in config file to start after server reboot
 /sbin/chkconfig --add httpd
 /sbin/chkconfig httpd on
+
+# HTTPD Services Start
+service httpd start
