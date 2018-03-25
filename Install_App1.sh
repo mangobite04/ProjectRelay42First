@@ -32,6 +32,9 @@ else     
 </html>
 EOL
 
+# File Permision
+chmod 644 /var/www/html/index.php
+
 # HTTPD Start
 /sbin/service httpd start
 /sbin/chkconfig --add httpd
