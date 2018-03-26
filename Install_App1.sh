@@ -5,7 +5,7 @@ yum install curl -y
 yum install php -y
 yum install php-mysql -y
 
-cat < /var/www/html/index.php << "EOL"
+cat > /var/www/html/index.php << "EOL"
 <html>
 <body>
 <h1>
