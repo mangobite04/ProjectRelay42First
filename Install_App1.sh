@@ -33,7 +33,8 @@ else     
 EOL
 
 # File Permision
-chmod 644 /var/www/html/index.php
+chmod 0600 /var/www/html/index.php
+chown apache:apache index.php
 
 # HTTPD Start
 /sbin/service httpd start
